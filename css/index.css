@@ -3,6 +3,11 @@
   flex-direction: column;
   background-color: #F6F6F6;
   align-items: center;
+  position: fixed;
+  /*makes header fixed*/
+  width: 100%;
+  top: 0;
+  /*end of fixed header styles*/
 }
 .top-styles h2 {
   padding: 2% 0;
@@ -17,6 +22,32 @@
 .nav-styles a {
   text-decoration: none;
   color: #454A59;
+  padding: 2%;
+  border-radius: 10px;
+}
+.color-animate {
+  animation-name: start;
+  animation-duration: 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes start {
+  0% {
+    background-color: #e6e6ff;
+  }
+  25% {
+    background-color: #8080ff;
+  }
+  50% {
+    background-color: #3333ff;
+  }
+  50% {
+    background-color: #0000b3;
+  }
+  100% {
+    background-color: #000066;
+    color: white;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -187,6 +218,11 @@ nav {
   flex-direction: column;
   background-color: #F6F6F6;
   align-items: center;
+  position: fixed;
+  /*makes header fixed*/
+  width: 100%;
+  top: 0;
+  /*end of fixed header styles*/
 }
 .topbar h2 {
   padding: 2% 0;
@@ -201,6 +237,32 @@ nav {
 .topbar nav a {
   text-decoration: none;
   color: #454A59;
+  padding: 2%;
+  border-radius: 10px;
+}
+.topbar nav a:hover {
+  animation-name: start;
+  animation-duration: 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes start {
+  0% {
+    background-color: #e6e6ff;
+  }
+  25% {
+    background-color: #8080ff;
+  }
+  50% {
+    background-color: #3333ff;
+  }
+  50% {
+    background-color: #0000b3;
+  }
+  100% {
+    background-color: #000066;
+    color: white;
+  }
 }
 @media (max-width: 500px) {
   .topbar nav {
@@ -219,8 +281,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  margin-top: 15%;
+  /*accounts for fixed header*/
+}
 @media (max-width: 500px) {
   .home {
+    margin-top: 20%;
     display: flex;
     flex-direction: column;
   }
@@ -323,7 +390,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
   }
   .home .walk .walk-text h3 {
@@ -335,6 +401,7 @@ footer {
   .home .walk .walk-text .btn {
     width: 90%;
     margin: 2% 3%;
+    align-items: center;
   }
   .home .walk .walk-img {
     width: 95%;

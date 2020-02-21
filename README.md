@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites can adapt to different screen resolutions, using a set of predefined screen sizes. Responsive websites use responsive units and can accommodate thousands of devices (instead of the few predefined ones available in adaptive).
+Responsive websites use % based layouts while adaptive websites are more rigid.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first or desktop first refers to which screen size you want to build first on an adaptive website. If it is desktop first, you will have to scale down, and vice versa for mobile first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+REM units allow you to set the font size of a webpage based on the font size of the root HTML element. Since the typical default browser font size is 16px, 62.5% of it will give us 10px font.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows you to use a unique syntax (of the preprocessor) in order to create more robust styling and rules compared to CSS, and will often contain features that are not included in CSS. This gives you the ability to add features such as variables and functions which leads to faster, easier, and more organized code and development. Then, the preprocessor language is compiled into CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite feature is definitely variables, as it is super useful to be able to set certain colors, sizes, etc when your design will be recalling them often. 
+The concept of importing multiple LESS pages into one is difficult for me because I feel like it makes it more confusing to have so many different documents to look through to find the rules you want. There's also always the possibility of another sheet overriding the rules you're writing if you aren't careful enough in the order you're placing things, so there's just a lot to keep track of.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
