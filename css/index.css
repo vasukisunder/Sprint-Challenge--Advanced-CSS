@@ -10,14 +10,13 @@
   /*end of fixed header styles*/
 }
 .top-styles h2 {
-  padding: 2% 0;
+  padding: 1% 0;
 }
 .nav-styles {
   display: flex;
   width: 50%;
   justify-content: space-evenly;
   color: #454A59;
-  padding-bottom: 2%;
 }
 .nav-styles a {
   text-decoration: none;
@@ -225,14 +224,13 @@ nav {
   /*end of fixed header styles*/
 }
 .topbar h2 {
-  padding: 2% 0;
+  padding: 1% 0;
 }
 .topbar nav {
   display: flex;
   width: 50%;
   justify-content: space-evenly;
   color: #454A59;
-  padding-bottom: 2%;
 }
 .topbar nav a {
   text-decoration: none;
@@ -282,7 +280,7 @@ footer {
   align-items: center;
 }
 .home {
-  margin-top: 15%;
+  margin-top: 10%;
   /*accounts for fixed header*/
 }
 @media (max-width: 500px) {
